@@ -13,7 +13,7 @@ export function Signin() {
 
   
   return (
-    <Center flex={1} bgColor="gray.900" p={7}>
+    <Center flex={1} bgColor="gray.900" p={3} >
       <Logo width={212} height={40}/>
 
       <Button 

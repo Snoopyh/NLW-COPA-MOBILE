@@ -7,9 +7,9 @@ import { Input } from "../components/Input";
 
 export function Find(){
   return (
-    <VStack flex={1} bgColor="gray.900">
+    <VStack flex={1} bgColor="gray.900" >
       <Header title="Criar Novo Bolão" showBackButton/>
-      <VStack>
+      <VStack mt={6}  p={3}>
         <Heading fontFamily='heading' color='white' fontSize='xl' mb={8} textAlign='center'>
         Encontre um bolão através de{'\n'}
         seu código único
