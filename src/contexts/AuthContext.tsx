@@ -13,7 +13,7 @@ interface UserProps{
 
 export interface AuthContextDataProps{
   user: UserProps;
-  isUserLoading: Boolean;
+  isUserLoading: boolean;
   signIn: () => Promise<void>;
 }
 
@@ -29,7 +29,7 @@ export function AuthContextProvider({ children } : AuthProviderProps ){
 
 
  const [request , response, promptAsync] = Google.useAuthRequest({
-    clientId:"371552484378-68ugssmgumq0qs2me91uoa5h6dloh0tu.apps.googleusercontent.com",
+    clientId:process.env.CLIENT_ID,
     redirectUri: AuthSession.makeRedirectUri({ useProxy: true}),
     scopes:['profile' ,'email']
   })

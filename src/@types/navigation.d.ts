@@ -4,7 +4,7 @@ export declare global {
       new: underfined,
       pools: underfined,
       find: underfined,
-      datails:{
+      details:{
         id: string;
         
       }
